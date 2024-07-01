@@ -1,0 +1,50 @@
+function fibonacci (x) {
+    var arr=[0,1]
+    for (var i=2; i<x-1; i++) {
+        arr[i]=arr[i-1]+arr[i-2]
+    }
+    return arr
+}
+console.log(fibonacci(12))
+*********
+function primeornot (x) {
+    var tab=[]
+   for (let i=2; i<x;i++)
+   if (x % i === 0) {
+       tab.push(i) 
+   }
+if (tab.length>0) {return x+" is a prime"}
+else {return x+" is not a prime"}
+}
+console.log(primeornot(7))
+*********
+function factorial(x) {
+    var a=1
+    for (var i=1; i<=x; i++)
+   { a=a*i }
+   return a
+}
+console.log(factorial(3))
+**********************
+function filter(a) {
+    var arr=[]
+    for (var i=0; i<a.length;i++) {
+        if (a[i]>2) {arr.push(a[i])}
+        
+    }
+    return arr
+}
+console.log(filter([5,8,10,1]))
+*****************
+function sum(a) {
+    var sum2=0
+    for (var i=0; i<a.length;i++) {
+        sum2+=a[i]
+        
+    }
+    return sum2
+}
+console.log(sum([5,8,10,1]))
+*********************
+
+
